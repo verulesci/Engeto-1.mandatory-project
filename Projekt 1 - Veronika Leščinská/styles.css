@@ -1,0 +1,349 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  max-width: 100%;
+}
+
+h2 {
+  font-size: 32px;
+  margin: 1rem 0;
+}
+
+/*NAVIGATION*/
+.navigation {
+  background-color: #33292a;
+}
+
+.navigation-items {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+/*HEADER*/
+.header-image {
+  background-image: url(images/scott-goodwill-y8Ngwq34_Ak-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 804px;
+}
+
+.header-container {
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
+
+.header-title {
+  position: absolute;
+  color: #fff;
+  font-weight: 700;
+  font-size: 96px;
+  text-align: right;
+  bottom: 10px;
+  right: 0;
+}
+
+/* ALL SECTION */
+
+/*ABOUT US*/
+.about-us-article {
+  background-color: #f2f2f2;
+}
+
+.about-us-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 45px;
+  padding: 2rem 0;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.about-us-section {
+  flex: 1 1 0;
+}
+
+.about-us-img {
+  flex: 1 1 0;
+}
+.about-us-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*WHAT WE DO*/
+.what-we-do-article {
+  background-color: #33292a;
+  padding: 2rem 0;
+}
+
+.what-we-do-container {
+  color: #ffffff;
+  gap: 100px;
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.what-we-do-description {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.what-we-do-icons {
+  display: flex;
+  justify-content: space-between;
+}
+.what-we-do-icons img {
+  width: 80px;
+  height: 80px;
+}
+
+.what-we-do-icons p {
+  font-size: 24px;
+}
+
+/*OUT TRIPS IMAGES*/
+.our-trips-images {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.our-trips-wrapp {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  gap: 20px;
+  justify-content: center;
+}
+
+.our-trips-wrapp img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.our-trips-img-item {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: calc(100% / 3 - 20px);
+}
+
+.our-trips-flex-img {
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: calc(100% / 3 - 20px);
+}
+
+/*WHERE TO GO*/
+.where-to-go-article {
+  background-color: #644b4f;
+  color: #ffffff;
+}
+
+.where-to-go-wrapp {
+  display: flex;
+  padding: 2rem 0;
+  gap: 20px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.where-to-go-text {
+  flex: 0 0 70%;
+}
+
+.where-to-go-btn {
+  background-color: #f2f2f2;
+  color: #000000;
+  border-radius: 4px;
+  margin-top: 44px;
+  padding: 1rem 2rem;
+}
+
+/*REVIEWS*/
+.review-article {
+  background-color: #f2f2f2;
+  padding: 2rem 0;
+}
+
+.review-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.review-wrapp {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.review-cells {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.review-cells img {
+  width: 111px;
+  height: 111px;
+  border-radius: 50%;
+}
+
+.review-clients-text {
+  padding: 2rem;
+}
+
+/* IMAGES */
+.images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.images-img-item {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: calc(100% / 2 - 20px);
+}
+
+/*FOOTER*/
+.footer {
+  background-color: #333333;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 39px;
+  padding-bottom: 41px;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer-contact {
+  color: #efa69d;
+  text-decoration: underline;
+  padding-bottom: 12px;
+}
+
+/* MEDIA QUERY */
+
+/* NAVIGATION */
+/* Computer */
+@media (min-width: 768px) {
+  .navigation-hamburger {
+    display: none;
+  }
+}
+
+/* Telephone*/
+@media (max-width: 768px) {
+  .navigation-items {
+    display: none;
+  }
+
+  .navigation-hamburger {
+    padding: 1rem 0;
+    width: 90%;
+    margin: 0 auto;
+    text-align: end;
+  }
+  .navigation-hamburger img {
+    height: 2rem;
+  }
+}
+
+/* HEADER */
+@media (max-width: 768px) {
+  .header-container {
+    width: 90%;
+  }
+  .header-title {
+    font-size: 42px;
+  }
+}
+
+/* ABOUT US */
+@media (max-width: 768px) {
+  .about-us-container {
+    width: 90%;
+    flex-direction: column;
+  }
+}
+
+/* WHAT WE DO */
+@media (max-width: 768px) {
+  .what-we-do-container {
+    width: 90%;
+  }
+  .what-we-do-icons {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+/* OUT TRIPS IMAGES */
+@media (max-width: 768px) {
+  .our-trips-images {
+    width: 90%;
+  }
+  .our-trips-wrapp {
+    flex-direction: column;
+  }
+  .our-trips-wrapp p {
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    padding: 2rem;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* WHERE TO GO */
+@media (max-width: 768px) {
+  .where-to-go-wrapp {
+    width: 90%;
+    flex-direction: column;
+  }
+}
+
+/* REVIEWS */
+@media (max-width: 768px) {
+  .review-container {
+    width: 90%;
+  }
+  .review-cells {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+
+/* IMAGES */
+@media (max-width: 768px) {
+  .images {
+    flex-direction: column;
+  }
+  .images img {
+    display: block;
+  }
+}
